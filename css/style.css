@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+.container-1 {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/* start header section */
+header {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
+    background: url("../Images/header-bg.jpg") no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+
+header .layout {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------navbar---------------- */
+header nav {
+
+    padding: 30px 0 0 0;
+}
+
+header ul {
+    float: right;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header li {
+    /* display: inline-block; */
+    font-size: 0.7rem;
+    /* width: 0.125%; */
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* -------booking------ */
+header .booking {
+    padding: 30px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .booking .left-side {
+    width: 50%;
+    color: white;
+
+}
+
+header .booking .left-side h1 {
+    font-size: 2.6rem;
+}
+
+header .booking .left-side h1,
+header .booking .left-side h5 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+header .booking .left-side p {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+header .booking .left-side button,
+.network article button {
+    padding: 15px 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+}
+
+header .booking form {
+    width: 40%;
+    background-color: rgba(37, 68, 99, 0.36);
+    padding: 50px 40px;
+    border: 1.5px solid #364357;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .booking form p {
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+header .booking form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header .booking form .half {
+    width: 48%;
+}
+
+header .booking form input[type='submit'],
+header .booking .left-side button,
+.network article button {
+    background-color: #F9B700;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+header input,
+select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+
+}
+
+header select {
+    color: #757575;
+}
+
+/* end header section */
+/* start service section */
+.service {
+    padding-bottom: 50px;
+}
+
+.service h1,
+.service .container>p,
+.car h1,
+.car .container>p,
+.car div.clear {
+    text-align: center;
+}
+
+.service h1,
+.car h1 {
+    font-size: 2.6rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.service .container>p,
+.car .container>p {
+    color: #ABA59D;
+    margin-bottom: 50px;
+}
+
+.service .container .serv-childs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service .container .serv-childs article {
+    width: 32%;
+    background-color: #EDEDF7;
+    /* float: left; */
+    padding: 40px 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+/* 
+.service .container .serv-childs article:nth-of-type(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+} */
+
+/* .service .container .serv-childs article:nth-of-type(3) {
+    float: right;
+} */
+
+.service .container .serv-childs article i {
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.service .container .serv-childs article p {
+    clear: both;
+    display: inline-block;
+    padding: 0 20px 20px 0;
+    text-align: justify;
+    color: #ABA59D;
+}
+
+/* end service section */
+/* end network section */
+.network {
+    margin: 50px 0;
+}
+
+.network img {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+}
+
+.network article {
+    width: 48%;
+    float: right;
+    padding-top: 30px;
+}
+
+.network article h1 {
+    font-size: 2.6rem;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+.network article p {
+    margin: 20px 0;
+    font-size: 0.8rem;
+    color: #ABA59D;
+    text-align: justify;
+}
+
+
+/* end network section */
+/* start car section */
+.car {
+    margin: 50px 0;
+}
+
+.car article {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-top: 60px;
+    line-height: 1.4;
+}
+
+.car article h4 {
+    float: left;
+    margin-top: 20px;
+}
+
+.car article small {
+    float: right;
+    color: #F9B700;
+    font-weight: bolder;
+
+}
+
+.car article small span {
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+
+.car article>p.clear {
+    padding: 30px 0;
+
+}
+
+.car article p {
+    color: #ABA59D;
+
+}
+
+.car article button {
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+
+}
+
+
+.car img {
+    width: 48%;
+    float: right;
+    margin-top: 60px;
+
+}
+
+.car div.clear span {
+    height: 10px;
+    display: inline-block;
+    width: 10px;
+    background-color: #ABA59D;
+    margin: 60px 5px 0 0;
+
+}
+
+.car div.clear span:first-of-type {
+    background-color: #F9B700;
+
+}
+
+/* end car section */
+/* start team section */
+.team {
+    background: linear-gradient(#12121bd1, #12121bd1),
+        url("../Images/callaction-bg.jpg");
+    color: white;
+    text-align: center;
+
+}
+
+.team .container {
+    padding: 50px 0;
+}
+
+.team h1,
+.blog h1 {
+    font-size: 2.6rem;
+
+}
+
+.team p,
+.blog .container>p {
+    margin: 30px 0;
+    color: #8c9cac;
+    font-size: 0.8rem;
+
+}
+
+.team button {
+    margin: 30px 0;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #F9B700;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 1px solid #F9B700;
+}
+
+/* end team section */
+/* start blog section */
+.blog {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #FAF9FF;
+}
+
+.blog .container>p {
+    padding: 0 70px;
+
+}
+
+.blog .container article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .container figure {
+    width: 24%;
+    text-align: left;
+}
+
+.blog .container figure>span {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.blog .container figure>p {
+    margin: 15px 0;
+    color: #8c9cac;
+    font-size: 0.8rem;
+    line-height: 1.5;
+
+}
+
+.blog .container figure>img {
+    width: 100%;
+}
+
+.blog .container small {
+    color: #8c9cac;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* .blog .container figure small:nth-of-type(2) {
+    float: right;
+
+} */
+
+/* end blog section */
+/* start footer section */
+footer {
+    background-color: #04091D;
+    color: white;
+}
+
+footer .container>div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer aside {
+    padding: 70px 0;
+    width: 14%;
+}
+
+footer aside:last-of-type {
+    width: 28%;
+}
+
+footer aside h1 {
+    margin: 20px 0;
+    letter-spacing: 1.5px;
+}
+
+footer aside ul {
+    list-style-type: none;
+}
+
+footer aside li {
+    margin: 10px 0;
+    position: relative;
+
+}
+
+footer aside li input {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+    outline: none;
+    border: none;
+
+}
+
+footer aside li a {
+    color: #3D4750;
+    text-decoration: none;
+
+}
+
+footer aside li ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer aside li ul li a {
+    color: white;
+}
+
+footer aside li ul li a:hover {
+    color: #3D4750;
+}
+
+footer aside li button {
+    padding: 10px 15px;
+    background-color: #F9B700;
+    position: absolute;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+footer .container>div:last-of-type {
+    text-align: center;
+    padding: 20px 0 70px 0;
+    color: #3D4750;
+
+}
+
+/* end footer section */
